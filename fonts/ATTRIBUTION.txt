@@ -1,0 +1,8 @@
+Font files in this directory are derived from upstream bitmap fonts used by Adafruit GFX / FreeFont families.
+
+They should be treated as open-source font data and kept under their original font license.
+The common license used by these families is the SIL Open Font License (OFL), though exact
+terms may vary by upstream source and distribution.
+
+This project keeps attribution and the upstream license notice with these files.
+If you redistribute these fonts, please keep the upstream license text with them.
