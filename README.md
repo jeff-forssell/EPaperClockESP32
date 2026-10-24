@@ -58,6 +58,9 @@ Example commands include:
 - `rot [0-3]`
 - `power normal|light|deep`
 
+https://youtu.be/ctpwPFDf3Ec  shows the screen appearance including 
+rot and frame commands
+
 ## WiFi setup
 
 This project does not use a separate secrets file.

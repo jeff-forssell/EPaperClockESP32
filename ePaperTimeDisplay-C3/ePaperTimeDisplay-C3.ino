@@ -72,14 +72,17 @@
 #include <Preferences.h>
 #include "esp_sleep.h"
 
+#include "fonts/FreeMonoBold24pt7b.h"
+#include "fonts/FreeSans9pt7b.h"
+
 // ---- Optional RGB LED: uncomment these 3 lines to enable the blink ----
 #include <Adafruit_NeoPixel.h>
 #define RGB_PIN 8
 Adafruit_NeoPixel rgb(1, RGB_PIN, NEO_GRB + NEO_KHZ800);
 
 // ---- FreeFonts (copy these .h files into your sketch folder) ----
-#include "FreeMonoBold24pt7b.h"
-#include "FreeSans9pt7b.h"
+//#include "FreeMonoBold24pt7b.h"
+//#include "FreeSans9pt7b.h"
 
 // ---------------- Panel pins (ESP32-C3) ----------------
 #define EPD_CS   10
