@@ -12,8 +12,8 @@ be appreciated.
 - ESP32-C3 (4 MB flash)
 - WeAct 2.13" e-paper, 250x122, B/W, SSD1680
 - WiFi connection for NTP sync
-- Optional wake button on GPIO1 to GND
-- Optional WS2812 RGB LED on a configured GPIO pin
+- Optional wake button on GPIO1 to GND (Not really tested. Used only RESET) 
+- Optional WS2812 RGB LED on a configured GPIO pin Blinks once Green when awake from deep sleep
 
 Wiring used in the current build:
 
@@ -36,7 +36,9 @@ Wiring used in the current build:
 - WiFi-based NTP sync
 - NVS configuration for stored WiFi entries and settings
 - Serial command interface for WiFi, time, header, rotation, and power mode
-- Deep sleep support with a full redraw after wake
+- Deep sleep support with a full redraw after wake  
+   When in deep sleep "5V 0,00A 0,000W" it wakes for each minute update from RTC
+   for only a couple sec when the power becomes awake "5V 0,06A 0,29W"
 
 ## Serial commands
 
@@ -84,6 +86,12 @@ Notes:
 ## Arduino IDE
 
 This project is built and uploaded using the Arduino IDE.
+Start with the .ino file that is inside the folder with same name.
+Set board to ESP32C3 Dev Module
+Set IDE tools to: USB CDC on boot: enabled and
+                  Integrated USB Jtag 
+Serial monitor: new line; 115 200 baud
+Libraries needed: ESP32 expressif, GxEPD2 zingg                     
 
 No PlatformIO configuration is used for this version.
 

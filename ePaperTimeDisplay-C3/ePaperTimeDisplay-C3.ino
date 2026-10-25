@@ -61,7 +61,7 @@
     • Deep sleep resets the chip; panel controller RAM is lost, so
       deep wakes do a full redraw.
 
-  Version: 26-10-18
+  Version: 26-10-25
   Status:  working - time, wifi, display, power modes, header, rot setter
 ====================================================================*/
 
@@ -739,8 +739,8 @@ void loop() {
     blinkAwake(1);   // green blink while awake (no-op if RGB disabled)
 
     esp_sleep_enable_timer_wakeup(secs * 1000000ULL);
-    esp_deep_sleep_enable_gpio_wakeup((1ULL << WAKE_BTN), ESP_GPIO_WAKEUP_GPIO_LOW);
-    esp_deep_sleep_start();
+     esp_deep_sleep_enable_gpio_wakeup((1ULL << WAKE_BTN), ESP_GPIO_WAKEUP_GPIO_LOW);
+    esp_deep_sleep_start(); 
   } else {
     delay(50);
   }
