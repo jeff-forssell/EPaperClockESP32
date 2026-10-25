@@ -87,10 +87,12 @@ Notes:
 
 This project is built and uploaded using the Arduino IDE.
 Start with the .ino file that is inside the folder with same name.
+
 Set board to ESP32C3 Dev Module
+
 Set IDE tools to: USB CDC on boot: enabled and
-                  Integrated USB Jtag 
-Serial monitor: new line; 115 200 baud
+                  Integrated USB Jtag.   
+Serial monitor: new line; 115 200 baud.    
 Libraries needed: ESP32 expressif, GxEPD2 zingg                     
 
 No PlatformIO configuration is used for this version.
